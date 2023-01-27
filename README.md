@@ -25,6 +25,7 @@ I have the basic program saved in simple.c and it has been compiled into a binar
 # Installing/Running Angr
 
 Install Python's Virtual Environment & Dependencies (this prevents any potential lib conflicts)
+
 `sudo apt install python3-dev libffi-dev build-essential virtualenvwrapper -y`
 
 Configure/Activate Virtual Envinronment Wrapper (source it)
@@ -43,3 +44,7 @@ Install Angr in this newly created environment
 You should see the __angrEnv__ label in ther terminal prompt.
 
 Docs for using angr: https://docs.angr.io/core-concepts/toplevel
+
+# Finally, run Angr against our binary to find the password (7857)
+
+`python3 angrSim.py`
