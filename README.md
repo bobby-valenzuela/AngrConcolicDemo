@@ -23,3 +23,23 @@ __Note__: Basic code/setup taken as a template from "Ethical Hackin: A Hands-on 
 I have the basic program saved in simple.c and it has been compiled into a binary using `gcc simple.c -o simple` and saved as `simple`.
 
 # Installing/Running Angr
+
+Install Python's Virtual Environment & Dependencies (this prevents any potential lib conflicts)
+`sudo apt install python3-dev libffi-dev build-essential virtualenvwrapper -y`
+
+Configure/Activate Virtual Envinronment Wrapper (source it)
+`. /usr/share/virtualenvwrapper/virtualenvwrapper.sh`
+
+
+Create new Virtual Environment
+`mkvirtualenv --python=$(which python3) angrEnv`
+
+Install Angr in this newly created environment
+`python3 -m pip install angr`
+or
+`pip3 install angr`
+(I prefer the former)
+
+You should see the __angrEnv__ label in ther terminal prompt.
+
+Docs for using angr: https://docs.angr.io/core-concepts/toplevel
