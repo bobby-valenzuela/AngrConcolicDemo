@@ -28,17 +28,17 @@ Install Python's Virtual Environment & Dependencies (this prevents any potential
 `sudo apt install python3-dev libffi-dev build-essential virtualenvwrapper -y`
 
 Configure/Activate Virtual Envinronment Wrapper (source it)
+
 `. /usr/share/virtualenvwrapper/virtualenvwrapper.sh`
 
 
 Create new Virtual Environment
+
 `mkvirtualenv --python=$(which python3) angrEnv`
 
 Install Angr in this newly created environment
-`python3 -m pip install angr`
-or
-`pip3 install angr`
-(I prefer the former)
+
+`python3 -m pip install angr` or `pip3 install angr` (I prefer the former)
 
 You should see the __angrEnv__ label in ther terminal prompt.
 
