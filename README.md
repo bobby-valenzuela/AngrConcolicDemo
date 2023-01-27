@@ -49,3 +49,5 @@ Docs for using angr: https://docs.angr.io/core-concepts/toplevel
 Finally, run Angr against our binary to find the password (7857)
 
 `python3 angrSim.py`
+
+If all went well, Angr should find the password and output `Found Solution: 7857`.
