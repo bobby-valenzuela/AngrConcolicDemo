@@ -45,6 +45,7 @@ You should see the __angrEnv__ label in ther terminal prompt.
 
 Docs for using angr: https://docs.angr.io/core-concepts/toplevel
 
-# Finally, run Angr against our binary to find the password (7857)
+
+Finally, run Angr against our binary to find the password (7857)
 
 `python3 angrSim.py`
