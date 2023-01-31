@@ -16,7 +16,7 @@ We don't need to know the number, but just how the successful (or otherwise) sta
 
 All this happens while  we have no idea the secret number might be - but only what the successful state looks like.
 
-__Note__: Basic code/setup taken as a template from "Ethical Hackin: A Hands-on Introduction to Breaking in" 2021 | No Startch Press.
+__Note__: Basic code/setup taken as a template from "Ethical Hacking: A Hands-on Introduction to Breaking in" 2021 | No Startch Press.
 
 
 # Creating the binary
