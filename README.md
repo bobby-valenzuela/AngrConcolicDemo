@@ -1,7 +1,7 @@
 # AngrConcolicDemo
 Concolic (Dynamic Symbolic Execution) with Angr demo on a simple binary.
 
-Statuc Code Analysis usually involves one ouring over code to visualize any potential paths that a program might take.
+Static Code Analysis usually involves one pouring over code to visualize any potential paths that a program might take.
 Symbolic execution (SE), takes this one step further as it evaluates a binary itself making it programming-language-agnostic.
 SE usually requires some sort of a "Theorem Prover" (such as the very powerful Z3 theorem prover developed by Microsoft).
 Though SE is amazing - it does suffer some potential scalability issues with potentially larger programs.
