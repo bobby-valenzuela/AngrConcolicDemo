@@ -53,6 +53,7 @@ Finally, run Angr against our binary to find the password (7857)
 If all went well, Angr should find the password and output `Found Solution: 7857`.
 
 
+
 The "simple2.c" program is a tiny bit more complex and accepts two inputs: 7857 and 123.
 If you want to test with this program you can compile this one instead: 
 
