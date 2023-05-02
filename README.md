@@ -20,26 +20,43 @@ __Note__: Basic code/setup taken as a template from "Ethical Hacking: A Hands-on
 
 
 # Creating the binary
-I have the basic program saved in simple.c and it has been compiled into a binary using `gcc simple.c -o simple` and saved as `simple`.
+I have the basic program saved in simple.c and it has been compiled into a binary using 
+```bash
+$ gcc simple.c -o simple
+``` 
+and saved as 'simple'.
 
 # Installing/Running Angr
 
 Install Python's Virtual Environment & Dependencies (this prevents any potential lib conflicts)
 
-`sudo apt install python3-dev libffi-dev build-essential virtualenvwrapper -y`
+```bash
+$ sudo apt install python3-dev libffi-dev build-essential virtualenvwrapper -y
+```
 
 Configure/Activate Virtual Envinronment Wrapper (source it)
 
-`. /usr/share/virtualenvwrapper/virtualenvwrapper.sh`
+```bash
+$ . /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+```
 
 
 Create new Virtual Environment
 
-`mkvirtualenv --python=$(which python3) angrEnv`
+```bash
+$mkvirtualenv --python=$(which python3) angrEnv
+```
 
 Install Angr in this newly created environment
 
-`python3 -m pip install angr` or `pip3 install angr` (I prefer the former)
+```bash
+python3 -m pip install angr
+``` 
+or 
+```bash
+$ pip3 install angr
+```  
+(I prefer the former)
 
 You should see the __angrEnv__ label in ther terminal prompt.
 
@@ -48,7 +65,9 @@ Docs for using angr: https://docs.angr.io/core-concepts/toplevel
 
 Finally, run Angr against our binary to find the password (7857)
 
-`python3 angrSim.py`
+```bash
+$ python3 angrSim.py
+```
 
 If all went well, Angr should find the password and output `Found Solution: 7857`.
 
@@ -57,11 +76,15 @@ If all went well, Angr should find the password and output `Found Solution: 7857
 The "simple2.c" program is a tiny bit more complex and accepts two inputs: 7857 and 123.
 If you want to test with this program you can compile this one instead: 
 
-`gcc simple2.c -o simple`.
+```bash
+$ gcc simple2.c -o simple
+```
 
 Then run Angr on the "simple" binary that was just created
 
-`python3 angrSim.py`
+```bash
+$ python3 angrSim.py
+```
 
 You should see: `Found Solution: 78570000000123`
 
