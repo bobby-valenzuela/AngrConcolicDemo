@@ -88,4 +88,6 @@ $ python3 angrSim.py
 
 You should see: `Found Solution: 78570000000123`
 
-Not really a "useful" program here - but it served as a great demo for me to depper understand Symbolic Execution and how it all works.
+Not really a "useful" program here - but it served as a great demo for me to depper understand Symbolic Execution and how it all works.  
+  
+![Alt text](./demo-001.gif?raw=true "Demo 1")
